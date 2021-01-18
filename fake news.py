@@ -134,7 +134,7 @@ confusion_matrix = confusion_matrix(y_test, y_pred)
 print(confusion_matrix)
 
 n_errors=(y_pred!=y_test).sum()
-print(n_errors)  # 124
+print(n_errors)  
 
 ## ROC Curve...
 
@@ -176,7 +176,7 @@ model=rf.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 print("Accuracy:",accuracy_score(y_test, y_pred))
- #### Accuracy of the model is 84.21...###
+ #### Accuracy of the model is 84.56...###
  
 ### kappa score...##
 cohen_kappa_score(y_test,y_pred) ##.6825
@@ -189,7 +189,7 @@ confusion_matrix = confusion_matrix(y_test, y_pred)
 print(confusion_matrix)
 
 n_errors=(y_pred!=y_test).sum()
-print(n_errors)  # 140
+print(n_errors)  
 
 ## ROC Curve...
 
